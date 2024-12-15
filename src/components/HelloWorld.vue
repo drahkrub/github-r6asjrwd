@@ -8,7 +8,7 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <p>
+    <div>
       This is a demo project comparing the behavior of
       <a
         href="https://tanstack.com/query/latest/docs/framework/vue/overview"
@@ -20,7 +20,7 @@ defineProps<{
       <a href="https://pinia-colada.esm.dev/" target="_blank" rel="noopener"
         >@pinia/colada</a
       >. Try the following:
-      <p>
+      <div>
         <ul>
           <li>switch between "tanstack" and "pinia-colada"
           </li>
@@ -41,8 +41,8 @@ defineProps<{
         </ul>
         <br>
         My current problem: The watcher in "pinia-colada" fires too often and destroys changes in the input field.
-      </p>
-    </p>
+      </div>
+    </div>
   </div>
 </template>
 
