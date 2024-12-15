@@ -1,9 +1,9 @@
 # Comparing the behavior of `pinia-colada` and `@tanstack/vue-query`
 
 This is a simplified demo project comparing the behavior of
-[https://pinia-colada.esm.dev/](@pinia/colada)
+[@pinia/colada](https://pinia-colada.esm.dev/)
 and
-[https://tanstack.com/query/latest/docs/framework/vue/overview](@tanstack/vue-query).
+[@tanstack/vue-query](https://tanstack.com/query/latest/docs/framework/vue/overview).
 
 Maybe my setup is wrong, but this is the way I do it when using `@tanstack/vue-query` in CRUD apps (form based editing).
 
