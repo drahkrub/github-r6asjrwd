@@ -22,7 +22,7 @@ defineProps<{
       >. Try the following:
       <div>
         <ul>
-          <li>switch between "tanstack" and "pinia-colada"
+          <li>switch between "tanstack" and "pinia-colada" below
           </li>
           <li>switch between ("tanstack" or "pinia-colada") and "About"
           </li>
