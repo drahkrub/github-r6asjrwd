@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 defineProps<{
   msg: string
 }>()
@@ -7,12 +8,41 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-      What's next?
-    </h3>
+    <p>
+      This is a demo project comparing the behavior of
+      <a
+        href="https://tanstack.com/query/latest/docs/framework/vue/overview"
+        target="_blank"
+        rel="noopener"
+        >@tanstack/vue-query</a
+      >
+      and
+      <a href="https://pinia-colada.esm.dev/" target="_blank" rel="noopener"
+        >@pinia/colada</a
+      >. Try the following:
+      <p>
+        <ul>
+          <li>switch between "tanstack" and "pinia-colada"
+          </li>
+          <li>switch between ("tanstack" or "pinia-colada") and "About"
+          </li>
+          <li>click on "tanstack" or "pinia-colada", switch to a different browser tab and return
+          </li>
+          <li>change the content of the input field, do NOT click on "save" and do the switching again
+          </li>
+        </ul>
+        <br>
+        Oberver the counters (and the content of the input field):
+        <ul>
+          <li>readCounter: shows the number of the (faked) server reads
+          </li>
+          <li>watchCounter: shows the number of "watcher activations"
+          </li>
+        </ul>
+        <br>
+        My current problem: The watcher in "pinia-colada" fires too often and destroys changes in the input field.
+      </p>
+    </p>
   </div>
 </template>
 

@@ -1,6 +1,13 @@
-# pinia-colada-example
+# Comparing the behavior of `pinia-colada` and `@tanstack/vue-query`
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a simplified demo project comparing the behavior of
+[https://pinia-colada.esm.dev/](@pinia/colada)
+and
+[https://tanstack.com/query/latest/docs/framework/vue/overview](@tanstack/vue-query).
+
+Maybe my setup is wrong, but this is the way I do it when using `@tanstack/vue-query` in CRUD apps (form based editing).
+
+I would like to switch to `pinia-colada`, but my current problem is that the watcher in "pinia-colada" fires too often and destroys changes in input fields.
 
 ## Recommended IDE Setup
 
